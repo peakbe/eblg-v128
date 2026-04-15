@@ -160,6 +160,10 @@ app.get("/fids", async (req, res) => {
 // =========================
 // START SERVER
 // =========================
+app.get("/sonos", (req, res) => {
+    res.json({ ok: true });
+});
+
 app.listen(PORT, () => {
     console.log("[PROXY] Running on port", PORT);
 });
